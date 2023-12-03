@@ -1,0 +1,17 @@
+.filter-btn--mob {
+   display: flex;
+   align-items: center;
+   column-gap: 4px;
+   background-color: transparent;
+
+   span {
+      font-weight: 400;
+      font-size: 14px;
+      color: $black-color;
+   }
+
+   img {
+      width: 24px;
+      height: 24px;
+   }
+}

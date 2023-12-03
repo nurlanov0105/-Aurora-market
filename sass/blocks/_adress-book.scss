@@ -1,0 +1,27 @@
+.adress-book {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 16px;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+   }
+}
+.adress-book__content {
+   max-width: 350px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+}
+.btn-click {
+}
+.adress-book__btn {
+}

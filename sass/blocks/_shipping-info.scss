@@ -1,0 +1,32 @@
+.shipping-info {
+   padding: 20px 16px;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+}
+.shipping-info__title {
+   margin-bottom: 8px;
+   font-weight: 600;
+   font-size: 20px;
+   color: $black-color;
+}
+.shipping-info__descr {
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 12px;
+   color: $gray-color;
+}
+.shipping-info__subtitle {
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #1c1c1c;
+
+   span {
+      color: $primary-color;
+   }
+}
+.shipping-info__btn {
+   width: 100%;
+}

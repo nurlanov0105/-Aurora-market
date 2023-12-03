@@ -1,0 +1,135 @@
+.personal-popup {
+   position: fixed;
+   top: 50%;
+   left: -9999%;
+   z-index: -1;
+   opacity: 0;
+   transition: opacity 0.2s ease;
+
+   &.active {
+      left: 50%;
+      opacity: 1;
+      z-index: 6;
+      transform: translate(-50%, -50%);
+   }
+
+   /* Mobile*/
+   @media (max-width: 419px) {
+      width: 100%;
+   }
+}
+.personal-popup__container {
+   width: 700px;
+   padding: 60px 40px;
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 390px;
+      padding: 20px 16px 40px;
+      border-radius: 20px 20px 0px 0px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 419px) {
+      width: 100%;
+   }
+}
+
+.personal-popup__cross {
+   background-color: transparent;
+
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   svg {
+      width: 24px;
+      height: 24px;
+   }
+}
+
+.personal-popup__title {
+   &::after {
+      content: none;
+   }
+   margin-bottom: 40px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-weight: 500;
+      font-size: 16px;
+   }
+}
+.personal-popup__form {
+   max-width: 300px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      max-width: 100%;
+      width: 100%;
+   }
+}
+.personal-popup__label {
+   display: block;
+   margin-bottom: 16px;
+
+   &:last-of-type {
+      margin-bottom: 40px;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         margin-bottom: 20px;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      margin-bottom: 12px;
+   }
+}
+.personal-popup__subtitle {
+   display: block;
+   margin-bottom: 8px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+}
+
+.personal-popup__wrapper {
+   display: block;
+   position: relative;
+}
+
+.personal-popup__input {
+   width: 100%;
+   height: 40px;
+   padding: 0 8px;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+   @include transition;
+
+   &:focus {
+      border: 1px solid $primary-color;
+   }
+
+   color: $black-color;
+   font-size: 16px;
+   line-height: 1.5;
+}
+.btn {
+}
+.personal-popup__btn {
+   width: 100%;
+}

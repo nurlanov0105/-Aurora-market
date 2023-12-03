@@ -1,0 +1,101 @@
+.grid-card {
+   display: flex;
+   flex-direction: column;
+   max-width: 296px;
+   padding: 16px 20px;
+
+   background: $white-color;
+   border: 1px solid #dee2e7;
+   border-radius: 6px;
+}
+.grid-card__img {
+   width: 256px;
+   height: 256px;
+   margin-bottom: 16px;
+
+   img {
+      width: 256px;
+      height: 256px;
+   }
+}
+.grid-card__content {
+   display: flex;
+   flex-direction: column;
+}
+.grid-card__price {
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+   margin-bottom: 12px;
+}
+.grid-card__cost {
+   font-weight: 600;
+   font-size: 18px;
+   color: $black-color;
+}
+.grid-card__cashback {
+   display: flex;
+   align-items: end;
+
+   img {
+      width: 16px;
+      height: 16px;
+   }
+
+   span {
+      font-weight: 400;
+      font-size: 12px;
+      color: $red-color;
+   }
+}
+.grid-card__row {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+   margin-bottom: 12px;
+}
+.grid-card__rate {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+   padding-right: 14px;
+   position: relative;
+   img {
+      width: 16px;
+      height: 16px;
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: $light-gray;
+      border-radius: 50%;
+   }
+}
+.grid-card__shipping {
+   font-weight: 400;
+   font-size: 16px;
+   color: $green-color;
+}
+.grid-card__descr {
+   margin-bottom: 16px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.38;
+   color: #1c1c1c;
+}
+.grid-card__btns {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+}
+
+.grid-card__btn {
+   width: 160px;
+   z-index: 2;
+}

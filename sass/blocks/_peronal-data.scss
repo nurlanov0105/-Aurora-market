@@ -1,0 +1,16 @@
+.presonal-data {
+   display: flex;
+   flex-direction: column;
+}
+.presonal-data__info {
+   & + & {
+      margin-top: 8px;
+   }
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+}
+.presonal-data__title {
+   margin-bottom: 20px;
+}

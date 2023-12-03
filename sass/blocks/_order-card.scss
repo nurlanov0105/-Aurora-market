@@ -1,0 +1,74 @@
+.order-card {
+   display: flex;
+   flex-direction: column;
+   width: 280px;
+   padding: 20px;
+   flex-shrink: 0;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+}
+.order-card__list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 8px;
+
+   &:not(:last-of-type) {
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e4e4e4;
+      margin-bottom: 16px;
+   }
+
+   &:last-of-type {
+      margin-bottom: 19px;
+   }
+}
+.order-card__item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.order-card__name {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: #505050;
+}
+.order-card__price {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: #505050;
+}
+.order-card__price--accent {
+   color: $green-color;
+}
+.order-card__name--summary {
+   font-weight: 600;
+   font-size: 16px;
+   color: $black-color;
+}
+.order-card__price--summary {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 1.4;
+   letter-spacing: -0.2px;
+   color: $black-color;
+}
+
+.basket-card__btn {
+   margin-bottom: 20px;
+}
+.order-card__row {
+   display: flex;
+   column-gap: 8px;
+   justify-content: center;
+   align-items: center;
+}
+.order-card__card {
+   width: 34px;
+   height: 22px;
+}

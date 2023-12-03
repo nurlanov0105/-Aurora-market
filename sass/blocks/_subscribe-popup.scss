@@ -1,0 +1,59 @@
+.subscribe-popup {
+   position: fixed;
+   top: 50%;
+   left: -9999%;
+   z-index: -1;
+   opacity: 0;
+   transition: opacity 0.2s ease;
+
+   &.active {
+      left: 50%;
+      opacity: 1;
+      z-index: 6;
+      transform: translate(-50%, -50%);
+   }
+
+   /* Mobile*/
+   @media (max-width: 419px) {
+      width: 100%;
+   }
+
+   .btn-buy {
+      width: 145px;
+   }
+}
+.subscribe-popup__container {
+   width: 580px;
+   padding: 40px 20px;
+   position: relative;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      width: 100vw;
+      flex-direction: column;
+      row-gap: 25px;
+      align-items: center;
+      text-align: center;
+   }
+}
+.subscribe-popup__content {
+   max-width: 345px;
+}
+
+.subscribe-popup__title {
+   margin-bottom: 20px;
+}
+.subscribe-popup__descr {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+}

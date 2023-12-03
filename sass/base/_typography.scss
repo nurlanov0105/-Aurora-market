@@ -1,0 +1,65 @@
+.h1 {
+   font-weight: 600;
+   font-size: 48px;
+   color: $white-color;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 38px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 24px;
+   }
+}
+
+.h2 {
+   font-weight: 600;
+   font-size: 32px;
+   color: $black-color;
+   position: relative;
+
+   &:after {
+      content: "";
+      position: absolute;
+      bottom: -40%;
+      left: 0;
+      width: 200px;
+      height: 8px;
+      background: $primary-color;
+
+      /* Mobile*/
+      @media (max-width: 599px) {
+         bottom: -70%;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 28px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 20px;
+   }
+}
+
+.h3 {
+   font-weight: 600;
+   font-size: 20px;
+   color: $black-color;
+}
+
+.accent-color {
+   color: $primary-color;
+}
+
+.green-color {
+   color: $green-color;
+}
+
+.gray-color {
+   color: $gray-color;
+}

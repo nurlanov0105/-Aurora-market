@@ -1,0 +1,32 @@
+.quantity-counter {
+   width: 98px;
+   height: 40px;
+   padding: 0 8px;
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+   overflow: hidden;
+}
+.quantity-counter__arrow {
+   width: 24px;
+   height: 24px;
+
+   path {
+      fill: $primary-color;
+   }
+}
+.quantity-counter__arrow--left {
+}
+.quantity-counter__num {
+   min-width: 18px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+}
+.quantity-counter__arrow--right {
+}

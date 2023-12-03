@@ -1,0 +1,54 @@
+.header-nav {
+   height: 56px;
+   padding: 16px 0;
+   border-bottom: 1px solid #e0e0e0;
+   background-color: $white-color;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      display: none;
+   }
+}
+
+.header-nav-row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-nav-coomparison {
+   display: flex;
+   align-items: center;
+   column-gap: 4px;
+   @include transition;
+
+   svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+         fill: $gray-color;
+         @include transition;
+      }
+   }
+
+   span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.83;
+      color: $gray-color;
+      @include transition;
+   }
+
+   &:hover,
+   &:focus,
+   &:active {
+      span {
+         color: $black-color;
+      }
+
+      svg > path {
+         fill: $black-color;
+      }
+   }
+}

@@ -1,0 +1,131 @@
+.error-section {
+   padding: 80px 0 153px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 113px 0 60px;
+   }
+}
+
+.error-section__content {
+}
+.error-section__row {
+   display: flex;
+   justify-content: center;
+   column-gap: 80px;
+   margin-bottom: 60px;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      column-gap: 70px;
+      margin-bottom: 40px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      column-gap: 68px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      column-gap: 8px;
+   }
+}
+.error-section__img {
+   width: 281px;
+   height: 281px;
+   img {
+      max-height: 100%;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      width: 102px;
+      height: 102px;
+   }
+}
+.error-section__heading {
+}
+.error-section__title {
+   font-style: italic;
+   font-weight: 900;
+   font-size: 200px;
+   background: linear-gradient(96.14deg, #127fff 0%, #69a6ff 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      font-size: 170px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 130px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 100px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 389px) {
+      font-size: 77px;
+   }
+}
+.error-section__subtitle {
+   font-style: italic;
+   font-weight: 900;
+   font-size: 32px;
+
+   background: linear-gradient(96.14deg, #127fff 0%, #69a6ff 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   text-align: center;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: none;
+   }
+}
+.error-section__descr {
+   margin-bottom: 60px;
+   font-weight: 600;
+   font-size: 32px;
+   color: $gray-color;
+   text-align: center;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      font-size: 28px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 22px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 20px;
+      margin-bottom: 40px;
+   }
+}
+
+.error-section__btn-wrapper {
+   text-align: center;
+}
+
+.error-section__btn {
+   width: 300px;
+
+   /* Mobile Small */
+   @media (max-width: 389px) {
+      width: 100%;
+   }
+}

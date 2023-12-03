@@ -1,0 +1,138 @@
+.most-view {
+   padding-bottom: 80px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      padding-bottom: 60px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding-bottom: 40px;
+   }
+}
+
+.most-view__top {
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   margin-bottom: 54px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 30px;
+   }
+}
+
+.most-view__slider {
+   position: relative;
+   max-width: 1160px;
+   // overflow: hidden;
+
+   & > .owl-theme .owl-nav.disabled + .owl-dots {
+      display: none;
+   }
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      display: none;
+   }
+}
+
+.most-view__mob {
+   display: none;
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 12px;
+      margin-bottom: 24px;
+
+      .mob-card {
+         width: 80%;
+         justify-content: space-between;
+         /* Mobile*/
+         @media (max-width: 599px) {
+            width: 100%;
+         }
+      }
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      row-gap: 8px;
+   }
+}
+
+.most-view__row {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 20px;
+   row-gap: 30px;
+
+   & > * {
+      flex-shrink: 0;
+   }
+
+   // .owl-item {
+   //    width: unset !important;
+   // }
+}
+
+.cards__next {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translate(70%, -50%);
+
+   width: 28px;
+   height: 28px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background: $white-color;
+   border: 1px solid $light-gray;
+   z-index: 2;
+   @include transition;
+
+   svg {
+      width: 14px;
+      height: 14px;
+
+      path {
+         fill: $primary-color;
+         @include transition;
+      }
+   }
+
+   &:hover,
+   &:active {
+      background-color: $primary-color;
+
+      svg {
+         width: 14px;
+         height: 14px;
+
+         path {
+            fill: $white-color;
+            @include transition;
+         }
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      display: none;
+   }
+}
+
+.most-view__btn {
+   margin-left: auto;
+   margin-right: auto;
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 80%;
+   }
+}

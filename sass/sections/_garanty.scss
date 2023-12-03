@@ -1,0 +1,136 @@
+.garanty {
+   padding: 60px 0 88px;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      padding: 40px 0 70px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      padding: 20px 0 60px;
+   }
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 0 0 60px;
+   }
+}
+
+.garanty__title {
+   margin-bottom: 56px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      &::after {
+         width: 130px;
+      }
+   }
+}
+.garanty__intro {
+   margin-bottom: 60px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: #000000;
+   p + p {
+      margin-top: 24px;
+
+      /* Mobile*/
+      @media (max-width: 599px) {
+         margin-top: 18px;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      margin-bottom: 50px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 40px;
+      font-size: 14px;
+      letter-spacing: unset;
+      line-height: unset;
+      text-align: justify;
+   }
+}
+.garanty__content {
+}
+.garanty__box {
+   margin-bottom: 24px;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+.garanty__box-title {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: $black-color;
+   text-transform: uppercase;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
+}
+.garanty__descr {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: $gray-color;
+
+   & + & {
+      margin-top: 24px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
+}
+.garanty__list {
+   margin-bottom: 24px;
+   padding-left: 24px;
+   list-style-type: disc;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: $gray-color;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.71;
+   }
+}
+.garanty__item {
+}
+.garanty__descr-title {
+   display: block;
+   text-transform: uppercase;
+}
+
+.page-nav--garanty {
+   padding: 20px 0;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      .page-nav__item {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 1.5;
+         letter-spacing: -0.2px;
+         color: #8b96a5;
+      }
+   }
+}

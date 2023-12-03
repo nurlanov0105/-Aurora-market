@@ -1,0 +1,157 @@
+.news-card {
+   max-width: 356px;
+   position: relative;
+
+   background: $white-color;
+   border: 1px solid #e0e0e0;
+   border-radius: 6px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      max-width: unset;
+      width: 100%;
+   }
+}
+
+.news-card__out-link {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+.news-card__img {
+   width: 354px;
+   height: 280px;
+
+   img {
+      width: 100%;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      width: 356px;
+   }
+   /* Mobile Small */
+   @media (max-width: 389px) {
+      width: 100%;
+      height: unset;
+   }
+}
+
+.news-card__info {
+   padding: 12px 12px 20px 12px;
+}
+.news-card__data {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.news-card__time {
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+
+   img {
+      max-width: 16px;
+      width: 100%;
+      height: 16px;
+   }
+
+   span {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      color: #8b96a5;
+   }
+
+   & > * {
+      display: flex;
+      flex-shrink: 0;
+   }
+}
+.news-card__comments {
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+
+   img {
+      max-width: 16px;
+      width: 100%;
+   }
+
+   span {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      color: #8b96a5;
+   }
+
+   & > * {
+      display: flex;
+      flex-shrink: 0;
+   }
+}
+.news-card__title {
+   margin-bottom: 12px;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 1.5;
+   letter-spacing: 0.2px;
+}
+.news-card__descr {
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.43;
+   letter-spacing: 0.2px;
+   color: #8b96a5;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.news-card__link {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+   padding: 2.5px 0;
+
+   span {
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+   }
+
+   img {
+      width: 9px !important;
+      height: 16px !important;
+   }
+}
+
+// card link
+
+.news__card-link {
+   width: 358px;
+   height: 535px;
+   background: $gradient-color;
+   border-radius: 6px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      width: 100%;
+   }
+}
+.news__card-link-title {
+   max-width: 191px;
+   font-weight: 600;
+   font-size: 32px;
+   color: $white-color;
+   text-align: center;
+}

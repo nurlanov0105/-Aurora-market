@@ -1,0 +1,55 @@
+.legal-face-wrapper {
+}
+.legal-face {
+}
+
+.legal-face__cross {
+   top: 20px;
+   right: 20px;
+}
+
+.legal-face__title {
+   margin-bottom: 20px;
+
+   /* Mobile*/
+   @media (max-width: 899px) {
+      max-width: 250px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 389px) {
+      max-width: 246px;
+   }
+}
+.legal-face__descr {
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   text-align: justify;
+   color: #acacac;
+
+   p + p {
+      margin-top: 20px;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         margin-top: 10px;
+      }
+   }
+
+   a {
+      color: $primary-color;
+      display: inline;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 14px;
+      line-height: unset;
+   }
+}
+.btn {
+}
+.legal-face__btn {
+}

@@ -1,0 +1,94 @@
+.action-info-wrapper {
+}
+
+.action-info {
+   .iti__flag-container {
+      left: auto !important;
+      right: 0 !important  ;
+   }
+   .iti__country-list {
+      right: 0 !important;
+   }
+}
+
+.action-info__cross {
+   right: 20px;
+   top: 20px;
+}
+
+.action-info__title {
+   margin-bottom: 12px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      margin-left: unset;
+      margin-right: auto;
+      text-align: left;
+   }
+}
+.modal-title {
+}
+.action-info__subtitle {
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   text-align: justify;
+   color: $gray-color;
+}
+.action-info__row {
+   display: flex;
+   flex-direction: column;
+   row-gap: 12px;
+   margin-bottom: 20px;
+}
+.action-info__input-wrapper {
+   position: relative;
+   svg {
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+
+      width: 22px;
+      height: 22px;
+      path {
+         fill: $light-gray;
+         @include transition;
+      }
+   }
+}
+.action-info__input {
+   height: 40px;
+   width: 100%;
+   padding-left: 38px;
+   padding-right: 66px;
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: $black-color;
+
+   &::placeholder {
+      color: $light-gray;
+   }
+
+   @include transition;
+
+   &:focus {
+      border: 1px solid $primary-color;
+
+      & ~ svg {
+         path {
+            fill: $primary-color;
+         }
+      }
+   }
+}
+.btn {
+}
+.action-info__btn {
+}

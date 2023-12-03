@@ -1,0 +1,45 @@
+.comparison {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+   background-color: transparent;
+
+   svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+         fill: $gray-color;
+         @include transition;
+      }
+   }
+
+   span {
+      font-weight: 600;
+      font-size: 16px;
+      color: $gray-color;
+      @include transition;
+   }
+
+   &:hover,
+   &:focus,
+   &:active {
+      span {
+         color: $primary-color;
+      }
+
+      svg > path {
+         fill: $primary-color;
+      }
+   }
+
+   &.active {
+      span {
+         color: $primary-color;
+      }
+
+      svg > path {
+         fill: $primary-color;
+      }
+   }
+}

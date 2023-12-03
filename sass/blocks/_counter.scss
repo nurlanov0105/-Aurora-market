@@ -1,0 +1,42 @@
+.counter {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+   justify-content: space-between;
+   padding: 0 8px;
+   width: 150px;
+   height: 40px;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+   filter: drop-shadow(0px 1px 2px rgba(56, 56, 56, 0.08));
+}
+.counter__plus {
+   cursor: pointer;
+   svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+         fill: $black-color;
+      }
+   }
+}
+.counter__quantity {
+   font-weight: 400;
+   font-size: 16px;
+   color: $black-color;
+}
+.counter__minus {
+   cursor: pointer;
+
+   svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+         fill: $black-color;
+      }
+   }
+}

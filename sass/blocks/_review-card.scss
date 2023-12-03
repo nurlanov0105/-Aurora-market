@@ -1,0 +1,141 @@
+.review-card {
+   padding: 20px 20px 12px;
+   max-width: 679px;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 20px 12px;
+   }
+}
+.review-card-top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 11px;
+}
+.review-card__name {
+   font-weight: 600;
+   font-size: 16px;
+   color: $black-color;
+}
+.review-card__statistic {
+   display: flex;
+   align-items: center;
+   column-gap: 21px;
+}
+.review-card__like {
+   display: flex;
+   align-items: center;
+   column-gap: 11px;
+
+   svg {
+      width: 22px;
+      height: 20px;
+
+      path {
+         fill: #8b96a5;
+      }
+   }
+
+   &.active {
+      svg {
+         path {
+            fill: $primary-color;
+         }
+      }
+      span {
+         color: $primary-color;
+      }
+   }
+}
+
+.review-card__dislike {
+   display: flex;
+   align-items: center;
+   column-gap: 11px;
+
+   svg {
+      width: 22px;
+      height: 20px;
+
+      path {
+         fill: #8b96a5;
+      }
+   }
+
+   &.active {
+      svg {
+         path {
+            fill: $red-color;
+         }
+      }
+      span {
+         color: $red-color;
+      }
+   }
+}
+
+.review-card__stars {
+   display: inline-flex;
+   align-items: center;
+   margin-bottom: 20px;
+
+   img {
+      width: 19px;
+      height: 18px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 28px;
+   }
+}
+.review-card__list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 16px;
+   margin-bottom: 16px;
+}
+.review-card__item {
+   font-weight: 400;
+   font-size: 16px;
+   color: $gray-color;
+}
+.review-card__item-title {
+   font-weight: 500;
+   color: $primary-color;
+}
+
+.review-card__comment {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+   }
+}
+.review-card__comment-title {
+   font-weight: 400;
+   color: $black-color;
+}
+
+.review-card__btn {
+   display: none;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: inline-flex;
+      width: 100%;
+      margin-top: 20px;
+   }
+}

@@ -1,0 +1,51 @@
+.favorite {
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
+   cursor: pointer;
+   background-color: transparent;
+
+   svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+         fill: $gray-color;
+         @include transition;
+      }
+   }
+
+   span {
+      font-weight: 600;
+      font-size: 16px;
+      color: $gray-color;
+      @include transition;
+   }
+
+   // &:hover,
+   // &:active {
+   //    span {
+   //       color: $primary-color;
+   //    }
+
+   //    svg > path {
+   //       fill: $primary-color;
+   //    }
+   // }
+
+   // &:focus {
+   //    span {
+   //       color: $primary-color;
+   //    }
+   // }
+
+   &.active {
+      span {
+         color: $primary-color;
+      }
+
+      svg > path {
+         fill: $primary-color;
+      }
+   }
+}

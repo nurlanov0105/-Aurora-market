@@ -1,0 +1,139 @@
+@font-face {
+   font-family: "Inter";
+   src: local("Inter Regular"), local("Inter-Regular"),
+      url(../fonts/inter/Inter-Regular/Inter-Regular.woff2) format("woff2"),
+      url(../fonts/inter/Inter-Regular/Inter-Regular.woff) format("woff");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Inter";
+   src: local("Inter Medium"), local("Inter-Medium"),
+      url(../fonts/inter/Inter-Medium/Inter-Medium.woff2) format("woff2"),
+      url(../fonts/inter/Inter-Medium/Inter-Medium.woff) format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Inter";
+   src: local("Inter SemiBold"), local("Inter-SemiBold"),
+      url(../fonts/inter/Inter-SemiBold/Inter-SemiBold.woff2) format("woff2"),
+      url(../fonts/inter/Inter-SemiBold/Inter-SemiBold.woff) format("woff");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Inter";
+   src: local("Inter Bold"), local("Inter-Bold"),
+      url(../fonts/inter/Inter-Bold/Inter-Bold.woff2) format("woff2"),
+      url(../fonts/inter/Inter-Bold/Inter-Bold.woff) format("woff");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Inter";
+   src: local("Inter BlackItalic"), local("Inter-BlackItalic"),
+      url(../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.woff2) format("woff2"),
+      url(../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.woff) format("woff");
+   font-weight: 800;
+   font-style: normal;
+   font-display: swap;
+}
+
+html {
+   min-height: 100vh; /* sticky footer */
+   scroll-behavior: smooth;
+}
+
+body {
+   min-height: 100vh; /* sticky footer */
+   display: flex; /* sticky footer */
+   flex-direction: column; /* sticky footer */
+
+   background-color: $bg-color;
+   font-family: "Inter", sans-serif;
+   color: $black-color;
+   font-size: 16px;
+   font-weight: 400;
+
+   text-rendering: optimizeSpeed;
+   //text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+
+   &.active {
+      overflow: hidden;
+   }
+}
+
+body > * {
+   flex-shrink: 0; /* sticky footer */
+}
+
+/* Grid styles */
+
+.container {
+   max-width: 1212px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 16px;
+   padding-right: 16px;
+
+   &--fluid {
+      max-width: unset;
+   }
+
+   &--no-padding {
+      padding: 0;
+   }
+
+   /* Tablet */
+   @media (max-width: 1199px) {
+      width: 900px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 600px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      width: 390px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 389px) {
+      width: 100%;
+   }
+}
+
+/* Utility */
+
+.none {
+   display: none !important;
+}
+
+.visually-hidden {
+   opacity: 0;
+   visibility: hidden;
+   width: 0px;
+   height: 0px;
+   display: block;
+   margin-left: -10000px;
+   background: transparent;
+   font-size: 0;
+}
+
+/* Sticky Footer */
+
+.footer {
+   margin-top: auto; /* sticky footer */
+}

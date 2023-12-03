@@ -1,0 +1,138 @@
+.basket-card {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+   background: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+}
+.basket-card__top {
+   display: flex;
+   align-items: end;
+   justify-content: space-between;
+   padding: 40px 20px 20px;
+   border-bottom: 1px solid #dee2e7;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      flex-direction: column;
+      align-items: unset;
+      padding: 10px 10px 16px;
+   }
+}
+.basket-card__content {
+   display: flex;
+   column-gap: 12px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      z-index: 2;
+   }
+}
+.basket-card__img {
+   flex-grow: 0;
+   width: 105px;
+   height: 105px;
+   background-color: $white-color;
+   border: 1px solid $light-gray;
+   border-radius: 6px;
+   overflow: hidden;
+   flex-shrink: 0;
+
+   img {
+      width: 100%;
+      object-position: center;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      width: 90px;
+      height: 90px;
+
+      img {
+         width: 90px;
+         height: 90px;
+      }
+   }
+}
+.basket-card__info {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+.basket-card__title {
+   margin-bottom: 8px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.38;
+   color: $black-color;
+}
+.basket-card__subtitle {
+   margin-bottom: 11px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: -0.2px;
+   color: #8b96a5;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: none;
+   }
+}
+
+.btn-remove--active {
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: none;
+   }
+}
+
+.basket-card__count-wrapper {
+   display: flex;
+   align-items: end;
+   justify-content: space-between;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      z-index: 1;
+      margin-top: -20px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 319px) {
+      margin-top: 0;
+   }
+}
+
+.btn-remove--hidden {
+   display: none;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: inline-flex;
+   }
+}
+
+.basket-card__count {
+   .basket-card__title {
+      text-align: right;
+      margin-bottom: 12px;
+   }
+}
+
+.basket-card__bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 20px 40px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 16px 10px 16px;
+      & > .btn-back {
+         display: none;
+      }
+   }
+}

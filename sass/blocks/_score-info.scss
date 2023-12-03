@@ -1,0 +1,32 @@
+.score-info-wrapper {
+}
+.score-info {
+}
+
+.score-info__cross {
+   top: 20px;
+   right: 20px;
+}
+
+.score-info__title {
+   margin-bottom: 20px;
+}
+.score-info__descr {
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   text-align: justify;
+   color: $gray-color;
+
+   p + p {
+      margin-top: 20px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 14px;
+      line-height: unset;
+      margin-top: 10px;
+   }
+}

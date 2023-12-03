@@ -1,0 +1,163 @@
+.nav {
+   display: flex;
+   align-items: center;
+   column-gap: 7px;
+   position: relative;
+}
+.nav__list {
+   display: flex;
+   column-gap: 20px;
+   align-items: center;
+}
+
+.nav__list-item {
+}
+.nav__list-item-link {
+   font-weight: 600;
+   cursor: pointer;
+   @include transition;
+
+   &:hover,
+   &:focus,
+   &:active {
+      color: $primary-color;
+   }
+}
+
+.nav__list-item-burger {
+   position: relative;
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+   transition: opacity 0.2s ease-out, color 0.2s ease-out;
+   cursor: pointer;
+
+   &:hover,
+   &:active {
+      .nav__list-item-link {
+         color: $primary-color;
+      }
+      .nav__sub-wrapper {
+         top: 9px;
+         opacity: 1;
+      }
+   }
+   &:focus {
+      .nav__list-item-link {
+         color: $primary-color;
+      }
+   }
+}
+
+// sub list
+
+.nav__sub-wrapper {
+   padding-top: 30px;
+   position: absolute;
+   top: -9999em;
+   left: 0;
+   opacity: 0;
+   z-index: 3;
+   transition: opacity 0.2s ease-out;
+   z-index: 4;
+}
+
+.nav__sub-row {
+   display: flex;
+   padding: 20px 20px 45px 20px;
+
+   background-color: $white-color;
+   border: 1px solid #dee2e7;
+   border-radius: 0px 0px 6px 6px;
+}
+
+.nav__sub-list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 8px;
+}
+
+.nav__sub-item {
+   &.active {
+      padding-right: 50px;
+   }
+   color: $gray-color;
+}
+
+.nav__sub-item-row {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+   width: 289px;
+
+   padding: 8px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+
+   z-index: 3;
+   cursor: pointer;
+   @include transition;
+
+   svg:nth-child(1) {
+      width: 28px;
+      height: 28px;
+   }
+
+   svg {
+      width: 24px;
+      height: 24px;
+      path {
+         fill: $gray-color;
+         @include transition;
+      }
+   }
+
+   &:hover,
+   &:active,
+   &:focus {
+      background-color: #e5f1ff;
+      svg {
+         path {
+            fill: $primary-color;
+         }
+      }
+      span {
+         color: $primary-color;
+      }
+   }
+}
+
+.nav__sub-sec-list {
+   display: none;
+   margin-left: -10px;
+   &.active {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      width: 240px;
+   }
+}
+.nav__sub-sec-item {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $black-color;
+   @include transition;
+
+   a {
+      display: block;
+      padding: 10px 0;
+      @include transition;
+   }
+
+   &:hover,
+   &:active,
+   &:focus {
+      background-color: #e5f1ff;
+      a {
+         color: $primary-color;
+      }
+   }
+}

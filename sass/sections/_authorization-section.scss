@@ -1,0 +1,47 @@
+.authorization-section {
+   padding: 50px 0 365px;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 36px 0 365px;
+   }
+}
+
+.password-change__title {
+   margin-bottom: 40px;
+   font-weight: 600;
+   font-size: 32px;
+   color: $black-color;
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+   }
+}
+
+.authorization__options {
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 20px;
+   }
+}
+
+.authorization__label-input {
+   margin-bottom: 20px;
+}
+
+.authorization__btns {
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      row-gap: 12px;
+   }
+}
+
+.authorization__btn {
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 100%;
+   }
+}

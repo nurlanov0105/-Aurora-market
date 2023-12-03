@@ -1,0 +1,41 @@
+// Radio btn
+.radio-real {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   z-index: -1;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   &:checked + .radio-custom::before {
+      background-color: $primary-color;
+   }
+}
+.radio-custom {
+   display: inline-flex;
+   position: relative;
+   width: 16px;
+   height: 16px;
+
+   border-radius: 50%;
+   border: 1px solid $gray-color;
+   overflow: hidden;
+   flex-shrink: 0;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $light-gray;
+      overflow: hidden;
+      @include transition;
+   }
+}

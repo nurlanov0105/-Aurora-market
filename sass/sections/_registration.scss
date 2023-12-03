@@ -1,0 +1,175 @@
+.registration {
+   padding: 60px 0 103px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      padding: 50px 0 70px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 36px 0 50px;
+   }
+}
+
+.registration__title {
+   margin-bottom: 76px;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      margin-bottom: 60px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      &::after {
+         content: none;
+      }
+      margin-bottom: 40px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 20px;
+   }
+}
+.registration__content {
+}
+.registration__form-blank {
+   display: none;
+   &.active {
+      display: block;
+   }
+}
+.registration__label {
+   &:nth-child(5) {
+      margin-bottom: 28px;
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         margin-bottom: 40px;
+      }
+   }
+
+   .iti__selected-flag {
+      border-right: 1px solid $light-gray !important;
+   }
+
+   .iti__selected-flag {
+      padding: 0 8px 0 8px;
+   }
+}
+.registration__input-wrapper {
+}
+
+.registration__input {
+}
+
+.input-tel {
+   padding: 0 12px 0 60px !important;
+}
+.registration__radio {
+   display: inline-flex;
+   align-items: start;
+   column-gap: 14px;
+   margin-bottom: 60px;
+   position: relative;
+
+   .custom-checkbox {
+      flex-shrink: 0;
+   }
+
+   label.error {
+      right: unset;
+      top: 40px;
+      left: 2px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      margin-bottom: 40px;
+   }
+}
+
+.registration__radio-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: $gray-color;
+}
+
+.registration__btn {
+   width: 203px;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 100%;
+   }
+}
+
+.registration__form-succes {
+   display: none;
+   max-width: 500px;
+   width: 100%;
+   &.active {
+      display: block;
+   }
+
+   .input-label__title {
+      position: relative;
+      padding-right: 14px;
+      &::after {
+         content: "*";
+         position: absolute;
+         top: 0;
+         right: 0;
+         font-weight: 400;
+         font-size: 16px;
+         color: #d9222a;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      .input-label {
+         margin-bottom: 40px;
+      }
+   }
+}
+.registration__form-message {
+   margin-bottom: 20px;
+}
+
+.registration__input {
+   &::-webkit-outer-spin-button,
+   &::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+   }
+
+   &[type="number"] {
+      -moz-appearance: textfield; /* Firefox */
+   }
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   &::placeholder {
+      color: #dee2e7;
+   }
+}
+.registration__btns {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      row-gap: 12px;
+
+      .btn-grad {
+         width: 100%;
+      }
+   }
+}
